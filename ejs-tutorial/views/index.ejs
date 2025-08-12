@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form action="/" method="post">
+                <input type="text" name="programming" id="programming">
+                <button type="submit">Add</button>
+            </form>
+
+
+
+
+           <ul>
+                <% if (langue.length > 0) { %>
+                    <% langue.forEach(lang => { %>
+                        <li><%= lang %></li>
+                    <% }) %>
+                <% } else { %>
+                    <p>No data Found</p>
+                <% } %>
+            </ul>
+
+
+        </main>
+    </header>
+</body>
+</html>
